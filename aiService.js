@@ -34,7 +34,7 @@ class AIService {
     };
   }
 
-  // RAG / Question Answering over document chunks
+  // RAG / Question Answering over document chunks.
   async askQuestion({ query, documents }) {
     const queryTokens = this.tokenize(query);
     const queryTf = this.computeTf(queryTokens);
