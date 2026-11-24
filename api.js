@@ -16,7 +16,7 @@ router.use('/ai', aiRoutes);
 router.use('/', commentRoutes);
 router.use('/audit', auditRoutes);
 
-// Dedicated Document Schema endpoint
+// Dedicated Document Schema endpoint.
 router.get('/schema', (req, res) => {
   res.json({ success: true, name: "Document schema", version: "1.0.0", schema: DOCUMENT_SCHEMA });
 });
