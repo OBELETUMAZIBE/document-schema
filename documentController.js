@@ -33,7 +33,7 @@ const documentController = {
     }
   },
 
-  // List documents with search & category filters
+  // List documents with search & category filters.
   list(req, res, next) {
     const { teamId, category, tag, search } = req.query;
     const documents = documentService.getDocuments({ teamId, category, tag, search });
